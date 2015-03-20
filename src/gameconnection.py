@@ -809,7 +809,6 @@ class GameConnection(Subscribable, GpgNetServerProtocol):
             trueSkill = faPlayer(Player(inGameName), Rating(mean, dev))
         self.game.addTrueSkillPlayer(trueSkill)
         self.game.placePlayer(inGameName, place)
-        self.game.assignPlayerToTeam(inGameName, team)
 
 
     def parsePlayerOption(self, value):
